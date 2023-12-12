@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Employee</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="biggestbox">
+        <div class="leftnavbox">
+            <div class="toplogobox">
+                <img src="./Twinklelogo.PNG" alt="">
+                <span>TWINKLE</span>
+            </div>
+            <div class="middlenavlistbox">
+                <ul class="mainnavlist">
+                    <li class="normallist"><a class="normalanchor" href="./index.html#currentlocation"><span><i class="fa-solid fa-border-all"></i></span>Dashboard</a></li>
+                    <li class="normallist campuslist"><a class="normalanchor" href="#"><span><i class="fa-solid fa-school-flag"></i></span>Campuses<span class="back"><i class="fa-solid fa-caret-down"></i></span></a>
+                        <ul class="extranavlist campusextralist">
+                            <li><a href="./add_campus.html#currentlocation">Add Campus</a></li>
+                            <li><a href="./view_campus.html#currentlocation">View Campuses</a></li>
+                        </ul>
+                    </li>
+                    <li class="normallist"><a class="normalanchor" href="./events.html#currentlocation"><span><i class="fa-solid fa-calendar-days"></i></span>Events</a></li>
+                    <li class="normallist"><a class="normalanchor" href="./noticeboard.html#currentlocation"><span><i class="fa-solid fa-chalkboard"></i></span>Noticeboard</a></li>
+                    <li class="normallist employeelist"><a class="normalanchor" href="#"><span><i class="fa-solid fa-user-group"></i></span>Employees<span class="back"><i class="fa-solid fa-caret-down"></i></span></a>
+                        <ul class="extranavlist employeeextralist">
+                            <li><a href="./add_employee.html#currentlocation">Add Employee</a></li>
+                            <li><a href="./view_employees.html#currentlocation">View Employees</a></li>
+                        </ul>
+                    </li>
+                    <li class="normallist teacherlist"><a class="normalanchor" href="#"><span><i class="fa-solid fa-people-group"></i></span>Teachers<span class="back"><i class="fa-solid fa-caret-down"></i></span></a>
+                        <ul class="extranavlist teacherextralist">
+                            <li><a href="./add_teacher.html#currentlocation">Add Teacher</a></li>
+                            <li><a href="./view_teacher.html#currentlocation">View Teachers</a></li>
+                        </ul>
+                    </li>
+                    <li class="normallist studentlist"><a class="normalanchor" href="#"><span><i class="fa-solid fa-people-group"></i></span>Students<span class="back"><i class="fa-solid fa-caret-down"></i></span></a>
+                        <ul class="extranavlist studentextralist">
+                            <li><a href="./register_student.html#currentlocation">Register Student</a></li>
+                            <li><a href="./view_student.html#currentlocation">View Students</a></li>
+                        </ul>
+                    </li>
+                    <li class="normallist courselist"><a class="normalanchor" href="#"><span><i class="fa-solid fa-graduation-cap"></i></span>Courses<span class="back"><i class="fa-solid fa-caret-down"></i></span></a>
+                        <ul class="extranavlist courseextralist">
+                            <li><a href="./add_course.html#currentlocation">Add Course</a></li>
+                            <li><a href="./view_course.html#currentlocation">View Courses</a></li>
+                        </ul>
+                    </li>
+                    <li class="normallist subjectlist"><a class="normalanchor" href="#"><span><i class="fa-solid fa-book"></i></span>Subjects<span class="back"><i class="fa-solid fa-caret-down"></i></span></a>
+                        <ul class="extranavlist subjectextralist">
+                            <li><a href="./add_subject.html#currentlocation">Add Subject</a></li>
+                            <li><a href="./view_subject.html#currentlocation">View Subjects</a></li>
+                        </ul>
+                    </li>
+                    <li class="normallist batchlist"><a class="normalanchor" href="#"><span><i class="fa-solid fa-swatchbook"></i></span>Batches<span class="back"><i class="fa-solid fa-caret-down"></i></span></a>
+                        <ul class="extranavlist batchextralist">
+                            <li><a href="./add_batch.html#currentlocation">Add Batch</a></li>
+                            <li><a href="./view_batch.html#currentlocation">View Batches</a></li>
+                        </ul>
+                    </li>
+                    <li class="normallist"><a class="normalanchor" href="./section.html#currentlocation"><span><i class="fa-solid fa-puzzle-piece"></i></span>Section</a></li>
+                    <li class="normallist"><a class="normalanchor" href="./zoom_usage.html#currentlocation"><span><i class="fa-solid fa-video"></i></span>Zoom Usage</a></li>
+                    <li class="normallist resultlist"><a class="normalanchor" href="#"><span><i class="fa-solid fa-square-poll-vertical"></i></span>Exam Results<span class="back"><i class="fa-solid fa-caret-down"></i></span></a>
+                        <ul class="extranavlist resultextralist">
+                            <li><a href="">Add Result</a></li>
+                            <li><a href="">View Results</a></li>
+                        </ul>
+                    </li>
+                    <li class="normallist attendancelist"><a class="normalanchor" href="#"><span><i class="fa-solid fa-clock"></i></span>Attendance<span class="back"><i class="fa-solid fa-caret-down"></i></span></a>
+                        <ul class="extranavlist attendanceextralist">
+                            <li><a href="">Add Attendance</a></li>
+                            <li><a href="">View Attendance</a></li>
+                        </ul>
+                    </li>
+                    <li class="normallist paymentlist"><a class="normalanchor" href="#"><span><i class="fa-solid fa-money-check"></i></span>Payments<span class="back"><i class="fa-solid fa-caret-down"></i></span></a>
+                        <ul class="extranavlist paymentextralist">
+                            <li><a href="">Add Payment</a></li>
+                            <li><a href="">View Payments</a></li>
+                        </ul>
+                    </li>
+                    <li class="normallist"><a class="normalanchor" href="./invoice.html#currentlocation"><span><i class="fa-solid fa-receipt"></i></span>Invoice</a></li>
+                </ul>
+            </div>
+            <div class="bottomnavlistbox">
+                <ul>
+                    <li><a href=""><span><i class="fa-solid fa-gear"></i></span>Settings</a></li>
+                    <li><a href=""><span><i class="fa-solid fa-right-from-bracket"></i></span>Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="rightcontentbox">
+            <div class="rightcontenttoprow">
+                <div class="rightcontenttopleft">
+                    <span class="menu"><i class="fa-solid fa-bars"></i></span>
+                    <span class="text">Dashboard</span>
+                </div>
+                <div class="rightcontenttopright">
+                    <span class="bell"><i class="fa-regular fa-bell"></i><span class="notinum">10</span></span>
+                    <img src="./portrait-teenage-smiling-female-looking-camera-blue-background_116407-22009.jpg" alt="">
+                </div>
+            </div>
+            <div class="rightcontentmiddlerow">
+                <form class="addemployeebigbox">
+                    <h1>Update Course</h1>
+                    <h2>Course Information</h2>
+                    <div class="addemployeerow">
+                        <div class="addemployeecolumn">
+                            <span>Course Title<strong>*</strong></span>
+                            <input type="text" name="" id="" placeholder="Course Title" value="Level 4 Diploma in Computing" required>
+                        </div>
+                        <div class="addemployeecolumn">
+                            <span>Course Code<strong>*</strong></span>
+                            <input type="text" name="" id="" placeholder="Course Code" value="L4DC" required>
+                        </div>
+                    </div>
+                    <div class="addemployeerow">
+                        <div class="addemployeecolumn">
+                            <span>Course Type<strong>*</strong></span>
+                            <select name="" id="">
+                                <option value="" selected>Diploma</option>
+                                <option value="">Bachelor Degree</option>
+                                <option value="">Master Degree</option>
+                                <option value="">Doctorate Degree</option>
+                            </select>
+                        </div>
+                        <div class="addemployeecolumn">
+                            <span>Course Duration(months)</span>
+                            <input type="number" name="" id="" placeholder="Course Duration" min="0" value="12">
+                        </div>
+                    </div>
+                    <div class="addemployeerow">
+                        <div class="addemployeecolumn">
+                            <span>Awarded From<strong>*</strong></span>
+                            <input type="text" name="" id="" placeholder="Awarded From" value="NCC Education" required>
+                        </div>
+                        <div class="addemployeecolumn">
+                            <span>Course Status<strong>*</strong></span>
+                            <select name="" id="">
+                                <option value="" selected>Active</option>
+                                <option value="">Not Active</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="addemployeerow">
+                        <span>Course Description<strong>*</strong></span>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Course Description">The NCC Education Level 4 Diploma in Computing (L4DC) is an Ofqual regulated qualification. The qualification (with specialisms) makes up the first year of a Computing/ IT degree pathway. The qualification is equivalent to the first year of an IT degree in the UK university system.
+                        Students will be given the opportunity to develop essential thinking and study skills, not only within the computing domain, but also within the context of business through a balance of academic and vocational subjects. The qualification will allow them to understand and enter the computing profession with the necessary knowledge expected within the industry and the ability to apply the skills to a range of IT-related functions.
+                        </textarea>
+                    </div>
+                    <div class="addemployeerow">
+                        <span>Entry Requirements<strong>*</strong></span>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Entry Requirements">For entry onto the NCC Education L4DC qualification students must have at least one of the following:
+
+                            NCC Education Level 3 International Foundation Diploma for Higher Education Studies
+                            OR
+                            
+                            NCC Education Level 3 Diploma in Computing
+                            OR
+                            
+                            1 GCE ‘A’ Level pass
+                            Students must also meet the English language entry requirements of:
+                            
+                            IELTS min score of 5.5 or above
+                            OR
+                            
+                            GCE ‘O’ Level English C6
+                            Mature applicants will be considered for entry if they are able to demonstrate over 2 years of relevant work experience and have a GCE ‘O’ Level / IGCSE English and Maths or equivalent.
+                            
+                            OR
+                            
+                            The Oxford Test of English is recognised for acceptance onto NCC Education programmes. An affordable, personalized test that fits you – it’s 100% online, flexible, fast, and available at Approved Test Centres across the globe. Plus, it’s the only language proficiency test certified by the University of Oxford.</textarea>
+                    </div>
+                    <div class="addemployeerow">
+                        <span>Academic Progression<strong>*</strong></span>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Academic Progression">The qualification allows students entry to either the NCC Education Level 5 Diploma in Computing, (which is equivalent to the second year of a UK Bachelor’s degree), or the second year of many UK university degree courses, or enables you to pursue a career in the IT industry.</textarea>
+                    </div>
+                    
+                    <div class="addemployeeeducation">
+                        <div class="addemployeeeducationtoprow">
+                            <h4>Subjects</h4>
+                            <span id="addemployeeeducationbtn">ADD</span>
+                        </div>
+                        <div class="table">
+                            <table>
+                            <tr>
+                                <th>Subject ID</th>
+                                <th>Subject Title</th>
+                                <th>Subject Code</th>
+                            </tr>
+                            <tr>
+                                <td>S01728</td>
+                                <td>Skills For Computing</td>
+                                <td>SFC</td>
+                                <td><div class="educlose"><i class="fa-solid fa-xmark"></i></div></td>
+                            </tr>
+                            <tr>
+                                <td>S01729</td>
+                                <td>Computer Networks</td>
+                                <td>CN</td>
+                                <td><div class="educlose"><i class="fa-solid fa-xmark"></i></div></td>
+                            </tr>
+                            <tr>
+                                <td>S01730</td>
+                                <td>Computer Systems</td>
+                                <td>CS</td>
+                                <td><div class="educlose"><i class="fa-solid fa-xmark"></i></div></td>
+                            </tr>
+                            <tr>
+                                <td>S01731</td>
+                                <td>Designing and Developing a Website</td>
+                                <td>DDW</td>
+                                <td><div class="educlose"><i class="fa-solid fa-xmark"></i></div></td>
+                            </tr>
+                            <tr>
+                                <td>S01732</td>
+                                <td>Databases</td>
+                                <td>DBAS</td>
+                                <td><div class="educlose"><i class="fa-solid fa-xmark"></i></div></td>
+                            </tr>
+                            <tr>
+                                <td>S01733</td>
+                                <td>Designing and Developing Object-Oriented Computer Programmes</td>
+                                <td>DDOOCP</td>
+                                <td><div class="educlose"><i class="fa-solid fa-xmark"></i></div></td>
+                            </tr>
+                            <tr>
+                                <td>S01734</td>
+                                <td>Software Development Techniques</td>
+                                <td>SDT</td>
+                                <td><div class="educlose"><i class="fa-solid fa-xmark"></i></div></td>
+                            </tr>
+                            <tr>
+                                <td>S01735</td>
+                                <td>Office Solutions Development</td>
+                                <td>OSD</td>
+                                <td><div class="educlose"><i class="fa-solid fa-xmark"></i></div></td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                    <button type="submit">Update Course</button>
+                </form>
+                <form action="" class="educationcertificateform" id="addemployeeeducationform">
+                    <div class="topdetail">
+                     <h1>Subject details</h1>
+                     <span id="addemployeeeducationclose"><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                    <span>Search By</span>
+                    <input type="text" name="" id="" placeholder="Search By" required>     
+                    <span>Subject Name</span>
+                    <select name="" id="">
+                         <option value="">Skills for Computing</option>
+                         <option value="">Computer Networks</option>
+                         <option value="">Computer Systems</option>
+                         <option value="">Designing and Developing a Website</option>
+                         <option value="">Databases</option>
+                         <option value="">Designing and Developing Object-Oriented Computer Programmes</option>
+                         <option value="">Software Development Techniques</option>
+                         <option value="">Office Solution Development</option>
+                    </select>
+                    <button type="submit">ADD</button>
+             </form>
+             
+            </div>
+            <div class="copyright">
+                Copyright &copy; 2023 Twinkle University 
+            </div>
+        </div>
+    </div>
+    <script>
+        const nav = document.querySelector(".leftnavbox");
+        const rightbox = document.querySelector(".rightcontentbox");
+        const menubtn = document.querySelector(".menu");
+        menubtn.addEventListener("click", function(){
+            nav.classList.toggle("reduce");
+            rightbox.classList.toggle("increase");
+        })
+    </script>
+    <script>
+        let number1 = document.getElementById("number1");
+        let counter1 = 0;
+        setInterval(() => {
+            if(counter1 == 100){
+                clearInterval();
+            }
+            else{
+                counter1 += 1;
+                number1.innerHTML = counter1 + "%" + "<br>NCC L3DC";
+            }
+        }, 17);
+    </script>
+    <script>
+        let number2 = document.getElementById("number2");
+        let counter2 = 0;
+        setInterval(() => {
+            if(counter2 == 90){
+                clearInterval();
+            }
+            else{
+                counter2 += 1;
+                number2.innerHTML = counter2 + "%" + "<br>NCC L4DC";
+            }
+        }, 17);
+    </script>
+    <script>
+        let number3 = document.getElementById("number3");
+        let counter3 = 0;
+        setInterval(() => {
+            if(counter3 == 95){
+                clearInterval();
+            }
+            else{
+                counter3 += 1;
+                number3.innerHTML = counter3 + "%" + "<br>NCC L4DCBM";
+            }
+        }, 17);
+    </script>
+    <script>
+        let number4 = document.getElementById("number4");
+        let counter4 = 0;
+        setInterval(() => {
+            if(counter4 == 95){
+                clearInterval();
+            }
+            else{
+                counter4 += 1;
+                number4.innerHTML = counter4 + "%" + "<br>NCC L5DC";
+            }
+        }, 17);
+    </script>
+    <script>
+        let camplist = document.querySelector(".campuslist");
+        let campexlist = document.querySelector(".campusextralist");
+        let camplistback = document.querySelector(".campuslist .back");
+        camplist.addEventListener("click",function(){
+            campexlist.classList.toggle("showextralist");
+            camplistback.classList.toggle("rotateback");
+        })
+        let emplist = document.querySelector(".employeelist");
+        let empexlist = document.querySelector(".employeeextralist");
+        let emplistback = document.querySelector(".employeelist .back");
+        emplist.addEventListener("click",function(){
+            empexlist.classList.toggle("showextralist");
+            emplistback.classList.toggle("rotateback");
+        })
+        let teacherlist = document.querySelector(".teacherlist");
+        let teacherextralist = document.querySelector(".teacherextralist");
+        let teacherlistback = document.querySelector(".teacherlist .back");
+        teacherlist.addEventListener("click",function(){
+            teacherextralist.classList.toggle("showextralist");
+            teacherlistback.classList.toggle("rotateback");
+        })
+        let stulist = document.querySelector(".studentlist");
+        let stuexlist = document.querySelector(".studentextralist");
+        let stulistback = document.querySelector(".studentlist .back");
+        stulist.addEventListener("click",function(){
+            stuexlist.classList.toggle("showextralist");
+            stulistback.classList.toggle("rotateback");
+        })
+        let coulist = document.querySelector(".courselist");
+        let couexlist = document.querySelector(".courseextralist");
+        let coulistback = document.querySelector(".courselist .back");
+        coulist.addEventListener("click",function(){
+            couexlist.classList.toggle("showextralist");
+            coulistback.classList.toggle("rotateback");
+        })
+        let sublist = document.querySelector(".subjectlist");
+        let subexlist = document.querySelector(".subjectextralist");
+        let sublistback = document.querySelector(".subjectlist .back");
+        sublist.addEventListener("click",function(){
+            subexlist.classList.toggle("showextralist");
+            sublistback.classList.toggle("rotateback");
+        })
+        let batchlist = document.querySelector(".batchlist");
+        let batchextralist = document.querySelector(".batchextralist");
+        let batchlistback = document.querySelector(".batchlist .back");
+        batchlist.addEventListener("click",function(){
+            batchextralist.classList.toggle("showextralist");
+            batchlistback.classList.toggle("rotateback");
+        })
+        let reslist = document.querySelector(".resultlist");
+        let resexlist = document.querySelector(".resultextralist");
+        let reslistback = document.querySelector(".resultlist .back");
+        reslist.addEventListener("click",function(){
+            resexlist.classList.toggle("showextralist");
+            reslistback.classList.toggle("rotateback");
+        })
+        let attlist = document.querySelector(".attendancelist");
+        let attexlist = document.querySelector(".attendanceextralist");
+        let attlistback = document.querySelector(".attendancelist .back");
+        attlist.addEventListener("click",function(){
+            attexlist.classList.toggle("showextralist");
+            attlistback.classList.toggle("rotateback");
+        })
+        let paylist = document.querySelector(".paymentlist");
+        let payexlist = document.querySelector(".paymentextralist");
+        let paylistback = document.querySelector(".paymentlist .back");
+        paylist.addEventListener("click",function(){
+            payexlist.classList.toggle("showextralist");
+            paylistback.classList.toggle("rotateback");
+        })
+    </script>
+    <script>
+        let announceopen = document.getElementById("announcesmthbtn");
+        let announceclose = document.getElementById("announceclosebtn");
+        let announcetext = document.getElementById("announcetext");
+        announceopen.addEventListener("click",function(){
+            announcetext.classList.add("announceshow");
+        })
+        announceclose.addEventListener("click",function(){
+            announcetext.classList.remove("announceshow");
+        })
+    </script>
+    <script>
+        let addemployeeeducationbtn = document.getElementById("addemployeeeducationbtn");
+        let addemployeeeducationform = document.getElementById("addemployeeeducationform");
+        let addemployeeeducationclose = document.getElementById("addemployeeeducationclose");
+        addemployeeeducationbtn.addEventListener("click",function(){
+            addemployeeeducationform.classList.add("educationcertificateshow");
+            addemployeeeducationform.style.opacity = 1;
+        })
+        addemployeeeducationclose.addEventListener("click",function(){
+            addemployeeeducationform.style.opacity = 0;
+            setTimeout(()=> {
+                addemployeeeducationform.classList.remove("educationcertificateshow");},500)
+        })
+
+        
+    </script>
+</body>
+</html>

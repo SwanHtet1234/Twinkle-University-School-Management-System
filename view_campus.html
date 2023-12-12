@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Campus</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="biggestbox">
+        <div class="leftnavbox">
+            <div class="toplogobox">
+                <img src="./Twinklelogo.PNG" alt="">
+                <span>TWINKLE</span>
+            </div>
+            <div class="middlenavlistbox">
+                <ul class="mainnavlist">
+                    <li class="normallist"><a class="normalanchor" href="./index.html#currentlocation"><span><i class="fa-solid fa-border-all"></i></span>Dashboard</a></li>
+                    <li class="normallist campuslist" id="currentlocation"><a class="normalanchor" href="#"><span><i class="fa-solid fa-school-flag"></i></span>Campuses<span class="back backoverride"><i class="fa-solid fa-caret-down"></i></span></a>
+                        <ul class="extranavlist campusextralist override">
+                            <li><a href="./add_campus.html#currentlocation">Add Campus</a></li>
+                            <li class="excurrent"><a href="#">View Campuses</a></li>
+                        </ul>
+                    </li>
+                    <li class="normallist"><a class="normalanchor" href="./events.html#currentlocation"><span><i class="fa-solid fa-calendar-days"></i></span>Events</a></li>
+                    <li class="normallist"><a class="normalanchor" href="./noticeboard.html#currentlocation"><span><i class="fa-solid fa-chalkboard"></i></span>Noticeboard</a></li>
+                    <li class="normallist employeelist"><a class="normalanchor" href="#"><span><i class="fa-solid fa-user-group"></i></span>Employees<span class="back"><i class="fa-solid fa-caret-down"></i></span></a>
+                        <ul class="extranavlist employeeextralist">
+                            <li><a href="./add_employee.html#currentlocation">Add Employee</a></li>
+                            <li><a href="./view_employees.html#currentlocation">View Employees</a></li>
+                        </ul>
+                    </li>
+                    <li class="normallist teacherlist"><a class="normalanchor" href="#"><span><i class="fa-solid fa-people-group"></i></span>Teachers<span class="back"><i class="fa-solid fa-caret-down"></i></span></a>
+                        <ul class="extranavlist teacherextralist">
+                            <li><a href="./add_teacher.html#currentlocation">Add Teacher</a></li>
+                            <li><a href="./view_teacher.html#currentlocation">View Teachers</a></li>
+                        </ul>
+                    </li>
+                    <li class="normallist studentlist"><a class="normalanchor" href="#"><span><i class="fa-solid fa-people-group"></i></span>Students<span class="back"><i class="fa-solid fa-caret-down"></i></span></a>
+                        <ul class="extranavlist studentextralist">
+                            <li><a href="./register_student.html#currentlocation">Register Student</a></li>
+                            <li><a href="./view_student.html#currentlocation">View Students</a></li>
+                        </ul>
+                    </li>
+                    <li class="normallist courselist"><a class="normalanchor" href="#"><span><i class="fa-solid fa-graduation-cap"></i></span>Courses<span class="back"><i class="fa-solid fa-caret-down"></i></span></a>
+                        <ul class="extranavlist courseextralist">
+                            <li><a href="./add_course.html#currentlocation">Add Course</a></li>
+                            <li><a href="./view_course.html#currentlocation">View Courses</a></li>
+                        </ul>
+                    </li>
+                    <li class="normallist subjectlist"><a class="normalanchor" href="#"><span><i class="fa-solid fa-book"></i></span>Subjects<span class="back"><i class="fa-solid fa-caret-down"></i></span></a>
+                        <ul class="extranavlist subjectextralist">
+                            <li><a href="./add_subject.html#currentlocation">Add Subject</a></li>
+                            <li><a href="./view_subject.html#currentlocation">View Subjects</a></li>
+                        </ul>
+                    </li>
+                    <li class="normallist batchlist"><a class="normalanchor" href="#"><span><i class="fa-solid fa-swatchbook"></i></span>Batches<span class="back"><i class="fa-solid fa-caret-down"></i></span></a>
+                        <ul class="extranavlist batchextralist">
+                            <li><a href="./add_batch.html#currentlocation">Add Batch</a></li>
+                            <li><a href="./view_batch.html#currentlocation">View Batches</a></li>
+                        </ul>
+                    </li>
+                    <li class="normallist"><a class="normalanchor" href="./section.html#currentlocation"><span><i class="fa-solid fa-puzzle-piece"></i></span>Section</a></li>
+                    <li class="normallist"><a class="normalanchor" href="./zoom_usage.html#currentlocation"><span><i class="fa-solid fa-video"></i></span>Zoom Usage</a></li>
+                    <li class="normallist resultlist"><a class="normalanchor" href="#"><span><i class="fa-solid fa-square-poll-vertical"></i></span>Exam Results<span class="back"><i class="fa-solid fa-caret-down"></i></span></a>
+                        <ul class="extranavlist resultextralist">
+                            <li><a href="">Add Result</a></li>
+                            <li><a href="">View Results</a></li>
+                        </ul>
+                    </li>
+                    <li class="normallist attendancelist"><a class="normalanchor" href="#"><span><i class="fa-solid fa-clock"></i></span>Attendance<span class="back"><i class="fa-solid fa-caret-down"></i></span></a>
+                        <ul class="extranavlist attendanceextralist">
+                            <li><a href="">Add Attendance</a></li>
+                            <li><a href="">View Attendance</a></li>
+                        </ul>
+                    </li>
+                    <li class="normallist paymentlist"><a class="normalanchor" href="#"><span><i class="fa-solid fa-money-check"></i></span>Payments<span class="back"><i class="fa-solid fa-caret-down"></i></span></a>
+                        <ul class="extranavlist paymentextralist">
+                            <li><a href="">Add Payment</a></li>
+                            <li><a href="">View Payments</a></li>
+                        </ul>
+                    </li>
+                    <li class="normallist"><a class="normalanchor" href="./invoice.html#currentlocation"><span><i class="fa-solid fa-receipt"></i></span>Invoice</a></li>
+                </ul>
+            </div>
+            <div class="bottomnavlistbox">
+                <ul>
+                    <li><a href=""><span><i class="fa-solid fa-gear"></i></span>Settings</a></li>
+                    <li><a href=""><span><i class="fa-solid fa-right-from-bracket"></i></span>Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="rightcontentbox">
+            <div class="rightcontenttoprow">
+                <div class="rightcontenttopleft">
+                    <span class="menu"><i class="fa-solid fa-bars"></i></span>
+                    <span class="text">Dashboard</span>
+                </div>
+                <div class="rightcontenttopright">
+                    <span class="bell"><i class="fa-regular fa-bell"></i><span class="notinum">10</span></span>
+                    <img src="./portrait-teenage-smiling-female-looking-camera-blue-background_116407-22009.jpg" alt="">
+                </div>
+            </div>
+            <div class="rightcontentmiddlerow">
+                <div class="campuslistbox">
+                    <div class="viewcampustopbox">
+                        <h2>Campuses(2)</h2>
+                        <a href="./add_campus.html" class="addcampusbtn"><i class="fa-solid fa-plus"></i> Add Campus</a>
+                    </div>
+                    <div class="viewcampusbottombox">
+                        <table class="campustablebox">
+                            <tr class="header">
+                                <th></th>
+                                <th class="headerleft">Campus ID</th>
+                                <th>Name</th>
+                                <th>Address</th>
+                                <th>Phone</th>
+                                <th>Action</th>
+                            </tr>
+                            <tr>
+                                <td class="listnum">1</td>
+                                <td class="campusid">C1097</td>
+                                <td>Center 1</td>
+                                <td class="campusaddress">No.29, 7th Floor, Dhammayone St, Sanchaung Tsp, Yangon, Myanmar</td>
+                                <td>+959943881284</td>
+                                <td><span class="campusactionbtn" id="campusactionbtn1"><i class="fa-solid fa-ellipsis-vertical"></i>
+                                    <div class="actionlist" id="actionlist1">
+                                        <a href="./update_campus.html">Update</a>
+                                        <a href="">Delete</a>
+                                    </div>                                
+                                </span></td>
+                            </tr>
+                            <tr>
+                                <td class="listnum">2</td>
+                                <td class="campusid">C1097</td>
+                                <td>Center 1</td>
+                                <td class="campusaddress">No.29, 7th Floor, Dhammayone St, Sanchaung Tsp, Yangon, Myanmar</td>
+                                <td>+959943881284</td>
+                                <td><span class="campusactionbtn" id="campusactionbtn2"><i class="fa-solid fa-ellipsis-vertical"></i>
+                                    <div class="actionlist" id="actionlist2">
+                                        <a href="./update_campus.html">Update</a>
+                                        <a href="">Delete</a>
+                                    </div>                                
+                                </span></td>
+                            </tr>
+                            
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                Copyright &copy; 2023 Twinkle University 
+            </div>
+        </div>
+    </div>
+    <script>
+        const nav = document.querySelector(".leftnavbox");
+        const rightbox = document.querySelector(".rightcontentbox");
+        const menubtn = document.querySelector(".menu");
+        menubtn.addEventListener("click", function(){
+            nav.classList.toggle("reduce");
+            rightbox.classList.toggle("increase");
+        })
+    </script>
+    <script>
+        let number1 = document.getElementById("number1");
+        let counter1 = 0;
+        setInterval(() => {
+            if(counter1 == 100){
+                clearInterval();
+            }
+            else{
+                counter1 += 1;
+                number1.innerHTML = counter1 + "%" + "<br>NCC L3DC";
+            }
+        }, 17);
+    </script>
+    <script>
+        let number2 = document.getElementById("number2");
+        let counter2 = 0;
+        setInterval(() => {
+            if(counter2 == 90){
+                clearInterval();
+            }
+            else{
+                counter2 += 1;
+                number2.innerHTML = counter2 + "%" + "<br>NCC L4DC";
+            }
+        }, 17);
+    </script>
+    <script>
+        let number3 = document.getElementById("number3");
+        let counter3 = 0;
+        setInterval(() => {
+            if(counter3 == 95){
+                clearInterval();
+            }
+            else{
+                counter3 += 1;
+                number3.innerHTML = counter3 + "%" + "<br>NCC L4DCBM";
+            }
+        }, 17);
+    </script>
+    <script>
+        let number4 = document.getElementById("number4");
+        let counter4 = 0;
+        setInterval(() => {
+            if(counter4 == 95){
+                clearInterval();
+            }
+            else{
+                counter4 += 1;
+                number4.innerHTML = counter4 + "%" + "<br>NCC L5DC";
+            }
+        }, 17);
+    </script>
+    <script>
+        let camplist = document.querySelector(".campuslist");
+        let campexlist = document.querySelector(".campusextralist");
+        let camplistback = document.querySelector(".campuslist .back");
+        camplist.addEventListener("click",function(){
+            campexlist.classList.toggle("showextralist");
+            camplistback.classList.toggle("rotateback");
+        })
+        let emplist = document.querySelector(".employeelist");
+        let empexlist = document.querySelector(".employeeextralist");
+        let emplistback = document.querySelector(".employeelist .back");
+        emplist.addEventListener("click",function(){
+            empexlist.classList.toggle("showextralist");
+            emplistback.classList.toggle("rotateback");
+        })
+        let teacherlist = document.querySelector(".teacherlist");
+        let teacherextralist = document.querySelector(".teacherextralist");
+        let teacherlistback = document.querySelector(".teacherlist .back");
+        teacherlist.addEventListener("click",function(){
+            teacherextralist.classList.toggle("showextralist");
+            teacherlistback.classList.toggle("rotateback");
+        })
+        let stulist = document.querySelector(".studentlist");
+        let stuexlist = document.querySelector(".studentextralist");
+        let stulistback = document.querySelector(".studentlist .back");
+        stulist.addEventListener("click",function(){
+            stuexlist.classList.toggle("showextralist");
+            stulistback.classList.toggle("rotateback");
+        })
+        let coulist = document.querySelector(".courselist");
+        let couexlist = document.querySelector(".courseextralist");
+        let coulistback = document.querySelector(".courselist .back");
+        coulist.addEventListener("click",function(){
+            couexlist.classList.toggle("showextralist");
+            coulistback.classList.toggle("rotateback");
+        })
+        let sublist = document.querySelector(".subjectlist");
+        let subexlist = document.querySelector(".subjectextralist");
+        let sublistback = document.querySelector(".subjectlist .back");
+        sublist.addEventListener("click",function(){
+            subexlist.classList.toggle("showextralist");
+            sublistback.classList.toggle("rotateback");
+        })
+        let batchlist = document.querySelector(".batchlist");
+        let batchextralist = document.querySelector(".batchextralist");
+        let batchlistback = document.querySelector(".batchlist .back");
+        batchlist.addEventListener("click",function(){
+            batchextralist.classList.toggle("showextralist");
+            batchlistback.classList.toggle("rotateback");
+        })
+        let reslist = document.querySelector(".resultlist");
+        let resexlist = document.querySelector(".resultextralist");
+        let reslistback = document.querySelector(".resultlist .back");
+        reslist.addEventListener("click",function(){
+            resexlist.classList.toggle("showextralist");
+            reslistback.classList.toggle("rotateback");
+        })
+        let attlist = document.querySelector(".attendancelist");
+        let attexlist = document.querySelector(".attendanceextralist");
+        let attlistback = document.querySelector(".attendancelist .back");
+        attlist.addEventListener("click",function(){
+            attexlist.classList.toggle("showextralist");
+            attlistback.classList.toggle("rotateback");
+        })
+        let paylist = document.querySelector(".paymentlist");
+        let payexlist = document.querySelector(".paymentextralist");
+        let paylistback = document.querySelector(".paymentlist .back");
+        paylist.addEventListener("click",function(){
+            payexlist.classList.toggle("showextralist");
+            paylistback.classList.toggle("rotateback");
+        })
+    </script>
+    <script>
+        let campusactionbtn1 = document.getElementById("campusactionbtn1");
+        let campusactionlist1 = document.getElementById("actionlist1");
+        campusactionbtn1.addEventListener("click",function(){
+            campusactionlist1.classList.toggle("actionshow");
+        })
+        let campusactionbtn2 = document.getElementById("campusactionbtn2");
+        let campusactionlist2 = document.getElementById("actionlist2");
+        campusactionbtn2.addEventListener("click",function(){
+            campusactionlist2.classList.toggle("actionshow");
+        })
+    </script>
+</body>
+</html>
